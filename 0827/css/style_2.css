@@ -1,0 +1,35 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+#content {
+    height: 100%;
+}
+h1 {
+    float: left;
+    width: 15%;
+    color: white;
+    padding-top: 2em;
+    height: 730px;
+    background-color: aquamarine;
+    text-align: center;
+}
+.layout-info {
+    float: left;
+    width: 85%;
+}
+.basic {
+    padding-top: 20px;
+}
+.info-margin {
+    margin-left: 20px;
+}
+.label-long {
+    padding-right: 10px;
+}
+.value-long {
+    padding-right: 30px;
+}
+.value-block {
+    display: block;
+}

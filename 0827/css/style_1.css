@@ -1,0 +1,9 @@
+.label-long {
+    padding-right: 10px;
+}
+.value-long {
+    padding-right: 30px;
+}
+.value-block {
+    display: block;
+}
