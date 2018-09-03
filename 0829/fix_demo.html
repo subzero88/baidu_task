@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏布局</title>
+    <link rel="stylesheet" href="fix_demo.css">
+</head>
+
+<body>
+    <h2>定位方式</h2>
+    <div id="position-type">
+        <div class="left" id="pl">l</div>
+        <div class="right" id="pr">r</div>
+        <div class="center" id="pc">
+            <p>这或许是三种方法里最直观，最容易理解的：左右两栏采用绝对定位，分别固定于页面的左右两侧，中间的主体栏用左右margin值撑开距离。于是实现了三栏自适应布局。</p>
+        </div>
+    </div>
+    <h2>浮动方式</h2>
+    <div id="float-type">
+        <div class="center" id="fc">
+            <p>这种方法是在实际的网站中应用的最多的，我个人感觉多少有些跟风的嫌疑。此方法很难用一句话概括。首先，中间的主体要使用双层标签。外层div宽度100%显示，并且浮动（本例左浮动，下面所述依次为基础），内层div为真正的主体内容，含有左右210像素的margin值。左栏与右栏都是采用margin负值定位的，左栏左浮动，margin-left为-100%，由于前面的div宽度100%与浏览器，所以这里的-100%
+                margin值正好使左栏div定位到了页面的左侧；右侧栏也是左浮动，其margin-left也是负值，大小为其本身的宽度即200像素。</p>
+        </div>
+        <div class="left" id="fl">l</div>
+        <div class="right" id="fr">r</div>
+    </div>
+    <h2>实现一个两栏布局，左侧占30%宽度，右侧占70%宽度</h2>
+    <div class="task" id="t1">
+        <div class="t1-left"></div>
+        <div class="t1-right"></div>
+    </div>
+    <h2>实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化</h2>
+    <div class="task" id="t2">
+        <div class="t-left"></div>
+        <div class="t-right"></div>
+    </div>
+    <h2>实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化</h2>
+    <div class="task" id="t3">
+        <div class="t-right"></div>
+        <div class="t-left"></div>
+    </div>
+    <h2>实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化</h2>
+    <div class="task" id="t4">
+        <div class="t-left"></div>
+        <div class="t-center"></div>
+        <div class="t-right"></div>
+    </div>
+    <h2>实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化</h2>
+    <div class="task" id="t5">
+        <div class="t-left"></div>
+        <div class="t-center"></div>
+        <div class="t-right"></div>
+    </div>
+</body>
+
+</html>

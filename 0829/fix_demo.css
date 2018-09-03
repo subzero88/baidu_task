@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#position-type {
+    height: 100px;
+    overflow: hidden;
+}
+
+#float-type {
+    height: 100px;
+}
+
+.left,
+.right {
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.center {
+    height: 100px;
+}
+
+#pc {
+    margin: 0 210px;
+    background-color: blanchedalmond;
+}
+
+#pl {
+    position: absolute;
+    left: 0;
+}
+
+#pr {
+    position: absolute;
+    right: 0;
+}
+
+#fl,
+#fr,
+#fc {
+    float: left;
+}
+
+#fr {
+    margin-left: -200px;
+}
+
+#fl {
+    margin-left: -100%;
+}
+
+#fc {
+    margin: 0 210px;
+}
+
+.task {
+    height: 100px;
+}
+
+#t1 {
+    display: flex;
+}
+
+.t1-left {
+    flex: 1;
+    background-color: aqua;
+    height: 100px;
+}
+
+.t1-right {
+    flex: 2;
+    background-color: aquamarine;
+    height: 100px;
+    margin-right: 20px;
+}
+
+#t2 {
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+#t2 .t-left {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: aqua;
+}
+
+#t2 .t-right {
+    background-color: aquamarine;
+    height: 100%;
+    margin-left: 210px;
+    margin-right: 20px;
+}
+
+#t3 {
+    overflow: hidden;
+}
+
+#t3 .t-right {
+    float: right;
+    width: 200px;
+    height: 100%;
+    margin-left: 10px;
+    background-color: aqua;
+}
+
+#t3 .t-left {
+    overflow: hidden;
+    height: 100%;
+    background-color: aquamarine;
+    margin-left: 20px;
+}
+
+#t4 div,
+#t5 div {
+    height: 100%;
+}
+
+#t4 .t-left,
+#t4 .t-center {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#t4 {
+    overflow: hidden;
+}
+
+#t4 .t-left {
+    background-color: antiquewhite;
+    margin-left: 20px;
+}
+
+#t4 .t-center {
+    background-color: aqua;
+}
+
+#t4 .t-right {
+    display: auto;
+    background-color: aquamarine;
+    margin-right: 20px;
+    margin-left: 440px;
+}
+
+#t5 {
+    display: flex;
+}
+#t5 .t-left {
+    flex: 1 200px;
+    background-color: antiquewhite;
+    margin-left: 20px;
+}
+#t5 .t-center {
+    flex: 1 200px;
+    margin-left: 10px;
+    background-color: aqua;
+}
+#t5 .t-right {
+    flex: 9999;
+    margin: 0 20px 0 10px;
+    background-color: aquamarine;
+}
