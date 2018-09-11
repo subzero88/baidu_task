@@ -1,0 +1,150 @@
+#content {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px black solid;
+}
+
+#header {
+    height: 80px;
+    background-color: black;
+}
+
+#header-logo {
+    font-size: 2em;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+#header-toolbar {
+    float: right;
+    margin-right: 150px;
+    margin-top: 15px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header-toolbar ul>li,
+#banner ul>li,
+#nav ul>li {
+    list-style: none;
+    display: inline-block;
+}
+
+#header-toolbar ul>li a:link {
+    color: #eeeeee;
+}
+
+#header-toolbar ul>li a:visited {
+    color: #eeeeee;
+}
+
+#header-toolbar ul>li a:hover {
+    color: #cccccc;
+}
+
+#footer {
+    height: 120px;
+    background-color: grey;
+    text-align: center;
+}
+
+#footer span {
+    display: inline-block;
+    padding-top: 15px;
+    color: white;
+}
+
+#banner {
+    background-color: rgb(114, 226, 114);
+    height: 200px;
+    position: relative;
+}
+
+#banner ul {
+    position: absolute;
+    right: 150px;
+    bottom: 20px;
+}
+
+#banner ul>li a {
+    text-decoration: none;
+}
+
+#banner ul>li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid green;
+    text-align: center;
+    background-color: #eeeeee;
+    opacity: 0.4;
+    position: relative;
+    top: 20px;
+}
+
+#banner ul .visited {
+    height: 40px;
+    opacity: 0.8;
+    top: 0px;
+}
+
+.visited a {
+    position: relative;
+    top: 20px;
+}
+
+#nav {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#nav ul {
+    position: absolute;
+    bottom: -1px;
+    left: 150px;
+}
+
+#nav ul {
+    font-size: 0;
+}
+#nav ul>li {
+    width: 70px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 15px 15px 0 0;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #eeeeee;
+}
+
+#nav ul .selected {
+    border-bottom:1px white solid;
+    background-color: white;
+}
+
+#detail {
+    margin: 0 150px 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#detail div {
+    height: 100px;
+    /* margin: 10px; */
+    text-align: center;
+    line-height: 100px;
+    border: 1px #cccccc solid;
+    box-sizing: border-box;
+}
+.content1,.content2 {
+    width: 35%;
+}
+.content3 {
+    width: 30%;
+}
